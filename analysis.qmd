@@ -174,7 +174,7 @@ The adjusted R-square value of **0.1328** shows that approximately 13.28% of the
 
 The findings from this regression model show disparity in mean earnings after graduating based on the racial composition of undergraduate students. Specifically, schools with higher percentages of Black students are associated with lower earnings. On the other hand, a higher proportion of Asian students is strongly correlated to higher earnings. However, the low number of adjusted R-square is a sign of omitted variable bias. The model could be improved by adding some control variables. including economic and institutional factors. 
 
-### Residual Plots for The First Model
+## Residual Plots for The Initial Model
 ```{r, message=FALSE, warning=FALSE}
 education_cohort_data_cleaned <- education_cohort_data_cleaned |>
   mutate(
@@ -238,7 +238,7 @@ combined_plot
 
 These residual plots indicate heteroskedasticity, where the variance of residuals is not constant across the predictor variable. 
 
-### Linear Model of Racial Disparities in Post-Graduation Earnings After Adding a Socioeconomic Factor
+## Linear Model of Racial Disparities in Post-Graduation Earnings After Adding a Socioeconomic Factor
 #### Model Overview:
 Adding variables that correspond to student's socioeconomic factors may serve reduce the omitted variable bias and therefore, improve the model fit. In this model, the `Socioeconomic_Div` variable is added. 
 

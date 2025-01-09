@@ -4,10 +4,9 @@ project:
   resources: scripts
 
 website:
-  title: "MA [46]15 Final Project"
+  title: "MA 415 Data Analysis Project"
   navbar:
     right:
-      - about.qmd
       - big_picture.qmd
       - analysis.qmd
       - data.qmd
