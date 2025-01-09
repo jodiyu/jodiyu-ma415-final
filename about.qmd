@@ -23,6 +23,7 @@ This is a website for the final project for MA[46]15 Data Science with R by Team
 The members of this team are below.
 This is a change
 This is another change
+Rendering for website
 
 ## Chang Liu
 
