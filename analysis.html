@@ -8,7 +8,7 @@
 
 <meta name="description" content="An Exploratory Analysis into the Relationship Between Race, Socioeconomic, and Post-Grad Earnings">
 
-<title>Analysis – MA [46]15 Final Project</title>
+<title>Analysis – MA 415 Data Analysis Project</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">MA [46]15 Final Project</span>
+    <span class="navbar-title">MA 415 Data Analysis Project</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -89,10 +89,6 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./big_picture.html"> 
 <span class="menu-text">What Does the American Dream Mean in Higher Education?</span></a>
@@ -122,11 +118,9 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#key-questions" id="toc-key-questions" class="nav-link active" data-scroll-target="#key-questions">Key Questions</a></li>
-  <li><a href="#linear-model-for-racial-disparity-in-post-graduation-earnings" id="toc-linear-model-for-racial-disparity-in-post-graduation-earnings" class="nav-link" data-scroll-target="#linear-model-for-racial-disparity-in-post-graduation-earnings">Linear Model for Racial Disparity in Post-Graduation Earnings</a>
-  <ul class="collapse">
-  <li><a href="#residual-plots-for-the-first-model" id="toc-residual-plots-for-the-first-model" class="nav-link" data-scroll-target="#residual-plots-for-the-first-model">Residual Plots for The First Model</a></li>
+  <li><a href="#linear-model-for-racial-disparity-in-post-graduation-earnings" id="toc-linear-model-for-racial-disparity-in-post-graduation-earnings" class="nav-link" data-scroll-target="#linear-model-for-racial-disparity-in-post-graduation-earnings">Linear Model for Racial Disparity in Post-Graduation Earnings</a></li>
+  <li><a href="#residual-plots-for-the-initial-model" id="toc-residual-plots-for-the-initial-model" class="nav-link" data-scroll-target="#residual-plots-for-the-initial-model">Residual Plots for The Initial Model</a></li>
   <li><a href="#linear-model-of-racial-disparities-in-post-graduation-earnings-after-adding-a-socioeconomic-factor" id="toc-linear-model-of-racial-disparities-in-post-graduation-earnings-after-adding-a-socioeconomic-factor" class="nav-link" data-scroll-target="#linear-model-of-racial-disparities-in-post-graduation-earnings-after-adding-a-socioeconomic-factor">Linear Model of Racial Disparities in Post-Graduation Earnings After Adding a Socioeconomic Factor</a></li>
-  </ul></li>
   <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
   </ul>
 </nav>
@@ -258,8 +252,9 @@ F-statistic and p-value:</code></pre>
 <p>The adjusted R-square value of <strong>0.1328</strong> shows that approximately 13.28% of the variation in median earnings within schools is explained by the model, indicating the model has only a small portion of explanatory power.</p>
 <p>The findings from this regression model show disparity in mean earnings after graduating based on the racial composition of undergraduate students. Specifically, schools with higher percentages of Black students are associated with lower earnings. On the other hand, a higher proportion of Asian students is strongly correlated to higher earnings. However, the low number of adjusted R-square is a sign of omitted variable bias. The model could be improved by adding some control variables. including economic and institutional factors.</p>
 </section>
-<section id="residual-plots-for-the-first-model" class="level3">
-<h3 class="anchored" data-anchor-id="residual-plots-for-the-first-model">Residual Plots for The First Model</h3>
+</section>
+<section id="residual-plots-for-the-initial-model" class="level2">
+<h2 class="anchored" data-anchor-id="residual-plots-for-the-initial-model">Residual Plots for The Initial Model</h2>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -277,8 +272,8 @@ F-statistic and p-value:</code></pre>
 </ul>
 <p>These residual plots indicate heteroskedasticity, where the variance of residuals is not constant across the predictor variable.</p>
 </section>
-<section id="linear-model-of-racial-disparities-in-post-graduation-earnings-after-adding-a-socioeconomic-factor" class="level3">
-<h3 class="anchored" data-anchor-id="linear-model-of-racial-disparities-in-post-graduation-earnings-after-adding-a-socioeconomic-factor">Linear Model of Racial Disparities in Post-Graduation Earnings After Adding a Socioeconomic Factor</h3>
+<section id="linear-model-of-racial-disparities-in-post-graduation-earnings-after-adding-a-socioeconomic-factor" class="level2">
+<h2 class="anchored" data-anchor-id="linear-model-of-racial-disparities-in-post-graduation-earnings-after-adding-a-socioeconomic-factor">Linear Model of Racial Disparities in Post-Graduation Earnings After Adding a Socioeconomic Factor</h2>
 <section id="model-overview-1" class="level4">
 <h4 class="anchored" data-anchor-id="model-overview-1">Model Overview:</h4>
 <p>Adding variables that correspond to student’s socioeconomic factors may serve reduce the omitted variable bias and therefore, improve the model fit. In this model, the <code>Socioeconomic_Div</code> variable is added.</p>
@@ -327,7 +322,6 @@ F-statistic and p-value:</code></pre>
 </div>
 </div>
 </div>
-</section>
 </section>
 </section>
 <section id="limitations" class="level2">
